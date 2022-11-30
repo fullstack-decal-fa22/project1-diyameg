@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Website</title>
+<meta charset="UTF-8">
+<meta name="author" content="Diya Megchiani">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="content" style="max-width:1300px">
+<div class="row">
+  <div class="half black container center" style="height:700px">
+    <div class="padding-64">
+      <h1>Home</h1>
+    </div>
+    <div class="padding-64">
+      <a href="#about" class="button black block hover-blue-grey padding-16">About</a>
+      <a href="#work" class="button black block hover-teal padding-16">My Work</a>
+      <a href="#work" class="button black block hover-dark-grey padding-16">Contact</a>
+      <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" class="button black block hover-dark-grey padding-16">Cat!</a>
+    </div>
+  </div>
+  <div class="half blue-grey container" style="height:700px">
+    <div class="padding-64 center">
+      <h1>About Me</h1>
+      <img src="cat.jpeg" class="margin circle" alt="Person" style="width:50%">
+      <div class="left-align padding-large">
+        <p>Hello, my name is Diya and I am a Computer Science and Media Studies major at UC Berkeley.</p>
+        <p>When I am not whiling away my time coding, I am usually consuming exorbitant amounts of media or bothering my friends.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="half teal center" style="height:700px" id="work">
+    <div class="padding-64">
+      <h2>My Work</h2>
+      <h3>My CS projects so far.</h3>
+    </div>
+    <div class="row">
+      <div class="half">
+        <ul>
+            <li>Hog</???>
+            <li>Cats</???>
+            <li>Ants vs. Some Bees</???>
+            <li>Scheme</???>
+        </ul>
+      </div>
+      <div class="half">
+        <ul>
+            <li>Blocks</???>
+            <li>Enigma</???>
+            <li>Ataxx</???>
+            <li>Gitlet</???>
+        </ul>
+      </div>
+    </div><br>
+    <h4>61A Fave:</h4>
+    <h5>Ants vs. Some Bees!</h5>
+    <h6>This was such a fun project, I loved coding the lil ant attributes.</h6>
+
+    <h4>61B Fave:</h4>
+    <h5>Enigma!</h5>
+    <h6>This project was super cool, I loved figuring out how to configure the machine.</h6>
+
+    <form onsubmit="return setAction(this)">
+        <div>
+            <label>Name:</label>
+            <input id="name" name="name" type="text">
+        </div>
+        <div>
+            <label>Email:</label>
+            <input id="email" name="email" type="email">
+        </div>
+        <div>
+            <input id="submit" type="submit">
+        </div>
+    </form>
+    
+    <script>
+        function setAction(form) {
+            form.action = "register.html";
+            alert(form.action);
+            return false;
+        }
+    </script> 
+        
+  </div>
+
+  <div class="half indigo container" style="height:700px">
+    <div class="padding-64 center">
+        <h1>Contact</h1>
+      <p class="opacity">GET IN TOUCH</p>
+      <form class="container card padding-32 indigo" action="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank">
+        <div class="section">
+          <label>Name</label>
+          <input class="input" style="width:100%;" type="text" required name="Name">
+        </div>
+        <div class="section">
+          <label>Email</label>
+          <input class="input" style="width:100%;" type="text" required name="Email">
+        </div>
+        <div class="section">
+          <label>Message</label>
+          <input class="input" style="width:100%;" type="text" required name="Message">
+        </div>
+        <button type="submit" class="button teal right">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
